@@ -19,4 +19,10 @@ public class LoginValidation extends BaseTest{
 	public void CheckAssertion() {
 	Assert.assertEquals(true,true);	
 	}
+	
+	@Test(priority=3)
+	public void CheckThirdAssertion()
+	{
+	Assert.assertEquals(false,false);	
+	}
 }
