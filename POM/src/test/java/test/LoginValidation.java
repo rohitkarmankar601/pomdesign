@@ -1,5 +1,6 @@
 package test;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LoginValidation extends BaseTest{
@@ -14,5 +15,8 @@ public class LoginValidation extends BaseTest{
 	Lp.CrossButton();
 	}
 	
-	
+	@Test(priority=2)
+	public void CheckAssertion() {
+	Assert.assertEquals(true,true);	
+	}
 }
